@@ -1,0 +1,60 @@
+.cheats-heading {
+  font-size: 2.5em;
+  text-align: left;
+  margin-bottom: 17.5px;
+  color: #fff;
+}
+
+#main-area {
+  min-height: 100vh;
+}
+
+#cheats-area {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  gap: 13px;
+}
+
+.cheat {
+  text-decoration: none;
+  width: auto;
+  height: auto;
+  max-height: 100vh;
+  max-width: 100vw;
+  border: none;
+  background-color: #353D47;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  z-index: 24;
+  padding: 5px;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.3s ease-in-out;  
+}
+
+.cheat:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgb(0, 149, 255);
+}
+
+.cheat-title {
+  font-size: 1.9em;
+  margin: 0.5em 0;
+  color: #fff;
+}
+
+.cheat-creator {
+  margin-top: 2px;
+  font-size: 1.6em;
+  color: #AAA;
+}
+
+#cheats-area,
+.cheats-heading {
+  margin-left: 2%;
+  margin-right: 2%;
+}

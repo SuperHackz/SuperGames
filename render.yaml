@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: cygames
+    env: node
+    buildCommand: build
+    startCommand:
+    plan: free

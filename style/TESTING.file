@@ -1,0 +1,282 @@
+#game-body {
+  display: flex;
+  flex-direction: column;
+}
+
+#game-frame {
+  margin-right: 90%;
+  margin-left: 10%;
+  position: relative;
+  float: left;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.frame {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 1250px;
+  height: 750px;
+  border: none;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+
+.game-bar {
+  width: 1250px;
+  height: 65px;
+  display: flex;
+  color: #fff;
+  position: relative;
+  background-color: #0095ff;
+  text-align: center;
+  align-items: center;
+  margin: -6px auto 0;
+  justify-content: space-between;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.game-index-title {
+  font-size: 45px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.fa-svg path {
+  fill: #fff;
+  transition: fill 0.3s ease;
+}
+
+.fa-svg:hover path {
+  fill: #000;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.full,
+.redir,
+.embed {
+  border: none;
+  transition: color 0.3s ease;
+  width: 50px;
+  cursor: pointer;
+  background-color: transparent;
+  margin-left: 4px;
+}
+
+.embed {
+  margin-left: 0;
+  width: 60px;
+  padding-left: 0;
+}
+
+.like-btn,
+.dislike-btn {
+  border: none;
+  width: 50px;
+  cursor: pointer;
+  background-color: transparent;
+  margin-left: 4px;
+}
+
+.full {
+  margin-right: 7px;
+}
+
+.embed-screen {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+  animation: open 0.5s ease;
+}
+
+.embed-body {
+  max-width: 600px;
+  height: 120px;
+  color: #fff;
+  background-color: #1C2128;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 80%;
+  text-align: center;
+  position: relative;
+}
+
+.embed-title {
+  margin-top: 6px;
+  font-size: 2.7em;
+  margin-bottom: 0;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 27px;
+}
+
+.fa-embed path {
+  fill: #fff;
+  transition: fill 0.3s ease;
+}
+
+.fa-embed:hover path {
+  fill: #ff0000;
+}
+  
+@keyframes open {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.copy-btn {
+  position: absolute;
+  margin: 10px 0px 10px 10px;
+  border: none;
+  right: 5px;
+  border-radius: 5px;
+  width: auto;
+  width: 50px;
+  color: #fff;
+  background-color: #1C2128;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.embed-fa svg {
+  width: 25px;
+}
+
+.embed-fa path {
+  fill: #fff;
+}
+
+.copy-area {
+  background-color: #353D47;
+  border-radius: 6px;
+  width: 443.938px;
+  height: 50px;
+  position: relative;
+  align-items: center;
+  display: flex;
+}
+
+.embed-code {
+  width: 370px;
+  height: 30px;
+  background: none;
+  border: none;
+  font-size: 1.7em;
+  color: #fff;
+  margin-left: 10px;
+  margin-right: auto;
+}
+
+.embed-code:focus {
+  outline: none;
+  border: none;
+}
+
+#description-area {
+  margin-top: 2%;
+  margin-bottom: 20px;
+  text-align: left;
+  background-color: #0095FF;
+  border-radius: 10px;
+  padding: 20px; 
+  width: 1250px;
+  margin-left: 10%;
+  margin-right: 90%;
+}
+
+.game-title {
+  font-size: 1.8em;
+  color: #fff;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.information-list {
+  line-height: 1;
+}
+
+.info-list-component {
+  font-size: 1.3em;
+  text-decoration: none;
+  color: #fff;
+}
+
+.technology-tag,
+.keyword-tag {
+  color: #fff;
+  cursor: pointer;
+  background-color: #404040;
+  border-radius: 5px;
+  padding: 5px;
+  width: auto;
+  height: auto;
+  max-height: 100vh;
+  transition: background-color 0.3s ease;
+  max-width: 100vw;
+  margin: 0px 5px 0px 5px;
+}
+
+.technology-tag:hover,
+.keyword-tag:hover {
+  background-color: #525252;
+}
+
+.description-txt {
+  color: #fff;
+  font-size: 1.5em;
+  margin: 0px 25px 0px 0px;
+}
+
+.controls-list {
+  margin: 0;
+  line-height: 1;
+  padding: 0px 20px 0px 20px;
+}
+
+.controls-list li {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #fff;
+}
+
+.list-title {
+  font-size: 1.8em;
+  color: #fff;
+  padding: 0;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+#simple-info,
+#complex-info,
+.description-txt {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

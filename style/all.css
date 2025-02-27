@@ -1,0 +1,988 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@503&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1C2128;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0;
+    min-height: 100vh;
+  }
+
+#spacet-index,
+#spacet {
+  margin-top: 3%;
+}
+
+  #header {
+    background-color: #1C2128;
+    color: #fff;
+    box-shadow: 0 0 7px #000;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+    padding: 5px 20px;
+    display: flex;
+    z-index: 999999;
+    justify-content: space-between;
+    height: 57px;
+  }
+
+  .header-img {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 310px;
+    z-index: 999999;
+    justify-content: flex-start;
+  }
+
+  .header-links {
+   display: flex;
+   align-items: center;
+   gap: 18px;
+   z-index: 999999;
+   justify-content: flex-end;
+  }
+
+  .header-link {
+   color: #fff;
+   font-size: 1.9em;
+   font-weight: bold;
+   text-decoration: none;
+   transition: color 0.3s ease;
+  }
+
+  .header-link:hover {
+   color: #0095ff;
+  }
+
+  #footer {
+   background-color: #1C2128;
+   z-index: 99999;
+   box-shadow: 0 0 7px #000;
+   display: flex;
+   bottom: 0;
+   transition: background-color 0.3s, color 0.3s;
+   width: 100%;
+   flex-direction: row;
+   position: relative;
+   justify-content: space-around;
+   padding: 20px 0;
+  }
+
+  .footer-title {
+   font-size: 1.7em;
+   font-weight: bold;
+   margin-bottom: 10px;
+  }
+
+
+  .footer-a {
+   color: #fff;
+   font-size: 1.4em;
+   text-decoration: none;
+   display: block;
+   text-align: center;
+   margin-bottom: 8px;
+   transition: color 0.3s ease;
+  }
+
+  .footer-a:hover {
+   color: #0095ff;
+  }
+
+  .footer-1, .footer-2, .footer-3, .footer-4 {
+   max-width: 200px;
+  }
+
+  .footer-4 {
+   position: relative;
+  }
+
+  .footer-4 .footer-a {
+   display: flex;
+   align-items: center;
+  }
+
+  #header.light-mode,
+  #footer.light-mode,
+  body.light-mode {
+   background-color: #fff;
+  }
+
+  body.light-mode .error-title,
+  body.light-mode .error-desc{
+   color: #000;
+  }
+
+  body.light-mode .header-link:hover,
+  body.light-mode .footer-a:hover {
+   color: #0095ff;
+  }
+
+  body.light-mode .int-desc {
+   color: #3c3832;
+  }
+
+  body.light-mode .search,
+  body.light-mode .submit {
+   background-color: #f0eded;
+   color: #000;
+  }
+
+  body.light-mode .search::placeholder,
+  body.light-mode .game-title {
+   color: #000;
+  }
+
+  body.light-mode .submit path {
+   fill: #000;
+  }
+
+  body.light-mode .homebtn {
+   border: 3px solid #000;
+  }
+
+  body.light-mode .game {
+   border: 1px solid #333333;
+   color: #000;
+   background-color: #f0eded;
+  }
+
+  body.light-mode .creator {
+   color: #555555;
+  }
+
+  body.light-mode .header-link {
+   color: #000;
+  }
+
+  body.light-mode .footer-a {
+   color: #000;
+  }
+
+  body.light-mode .sidebar-title {
+   color: #aaaaaa;
+  }
+
+  body.light-mode .sidebar-btn {
+   background-color: #fff;
+   color: #000;
+  }
+
+  body.light-mode .sidebar-btn:hover {
+   background-color: #ddd8d1;
+  }
+
+  body.light-mode .sidebar-btn path {
+   fill: #000000;
+  }
+
+  body.light-mode .sidebar-btn path {
+   fill: #000000;
+  }
+
+  body.light-mode #settings-box {
+   background-color: #fff;
+   color: #000;
+  }
+
+  body.light-mode .settings-box-title,
+  body.light-mode .settings-actions-subtitle {
+   color: #000;
+  }
+
+  body.light-mode #settings-box hr {
+   background-color: #000;
+  }
+
+  body.light-mode .tab-cloak-slot,
+  body.light-mode .tab-cloak-btn,
+  body.light-mode #ab-cloak,
+  body.light-mode .settings-input-box,
+  body.light-mode .settings-input {
+   background-color: #fff;
+  }
+
+  body.light-mode .settings-input-label,
+  body.light-mode #colorhex_txt,
+  body.light-mode #colorhex_bg {
+   color: #000;
+  }
+
+  body.light-mode .game,
+  body.light-mode .homebtn,
+  body.light-mode .search,
+  body.light-mode .submit, 
+  body.light-mode #header,
+  body.light-mode #footer,
+  body.light-mode .title,
+  body.light-mode {
+   color: #000;
+  }
+
+  body.light-mode .settings-input,
+  body.light-mode #colorpickerbg,
+  body.light-mode #colorpickertxt,
+  body.light-mode .select-settings {
+   background-color: #f0eded;
+   color: #000;
+  }
+
+  body.light-mode .settings-input::placeholder {
+   color: #000;
+  }
+
+  body.light-mode .cheats-heading {
+   color: #000;
+  }
+
+  body.light-mode .cheat {
+   background-color: #f0eded;
+  }
+
+  body.light-mode #links {
+   background-color: #f0eded;
+  }
+
+  body.light-mode .link,
+  body.light-mode .links-heading {
+   color: #000;
+  }
+
+  body.light-mode #chat-options {
+   background-color: #fff;
+   box-shadow: 0 0 7px #000;
+   color: #000;
+  }
+
+  body.light-mode .chat-options-title {
+   color: #000;
+  }
+
+  body.light-mode .chat-button {
+   background-color: #f0eded;
+   border: 3px solid #000;
+   color: #000;
+  }
+
+  body.light-mode .link:hover {
+   color: #0095FF;
+  }
+
+  body.light-mode .cheat-title {
+   color: #000;
+  }
+
+  body.light-mode .cheat-creator {
+   color: #555555;
+  }
+
+  body.light-mode .proxy-button {
+   color: #000;
+   background-color: #fff;
+  }
+
+  body.light-mode .proxy-button:hover {
+   background-color: #555;
+  }
+
+  body.light-mode #proxy-menu,
+  body.light-mode #proxy-options,
+  body.light-mode #proxy-console {
+   background-color: #f0eded;
+  }
+
+  body.light-mode .linkanchor {
+   color: #000;
+  }
+
+  body.light-mode .linkanchor:hover {
+   color: #0095FF;
+  }
+
+  body.light-mode .gtxt {
+   color: #000;
+  }
+
+  body.light-mode #gcontrols {
+   background-color: #fff;
+   box-shadow: 0 0 7px #000;
+  }
+
+  body.light-mode #returnbtn,
+  body.light-mode #fullbtn,
+  body.light-mode #refbtn {
+   background-color: #f0eded;
+  }
+
+  body.light-mode #returnbtn:hover,
+  body.light-mode #fullbtn:hover,
+  body.light-mode #refbtn:hover {
+   background-color: #555;
+  }
+
+  body.light-mode #returnbtn path,
+  body.light-mode #fullbtn path,
+  body.light-mode #refbtn path {
+   fill: #000;
+  }
+
+  body.selenite-mode #header,
+  body.selenite-mode #footer {
+   background-color: #240046;
+   color: #fff;
+   display: flex;
+   width: 100%;
+   z-index: 1;
+  }
+
+  body.selenite-mode .header-img {
+   display: none;
+  }
+
+  body.selenite-mode {
+   background-color: #10002B;
+   background-size: cover;
+   color: #fff;
+   font-family: 'Prompt', sans-serif;
+  }
+
+  body.selenite-mode #header {
+   justify-content: center;
+   position: fixed;
+   z-index: 999999999;
+   padding-top: 0;
+   padding-bottom: 0;
+   top: 0;
+   box-sizing: border-box;
+   height: 45px;
+   border-radius: 0 0 20px 20px;
+   box-shadow: rgb(36, 0, 70) 0px 5px 10px 0px;
+  }
+
+  body.selenite-mode #footer {
+   bottom: 0;
+   border-radius: 20px 20px 0 0;
+  }
+
+  body.selenite-mode .header-link,
+  body.selenite-mode .footer-a {
+   color: #fff;
+   font-size: 16px;
+   font-weight: 700;
+   text-align: center;
+   margin-right: 2rem;
+   margin-left: 1rem;
+   transition: text-shadow 0.5s ease;
+  }
+
+  body.selenite-mode .header-link:hover,
+  body.selenite-mode .footer-a:hover {
+   text-shadow: 2px 2px 6px #fff;
+  }
+
+  body.selenite-mode #settings-box {
+   background-color: #10002B;
+   color: #fff;
+  }
+
+  body.selenite-mode #ab-cloak,
+  body.selenite-mode .settings-input-box {
+   background-color: #240046;
+  }
+
+  body.selenite-mode .select-settings,
+  body.selenite-mode .settings-input,
+  body.selenite-mode .tab-cloak-btn {
+   background-color: #3C096C;
+   border: 2px solid rgb(90, 24, 154);
+  }
+
+  body.selenite-mode .sidebar-title {
+   color: #fff;
+  }
+
+  body.selenite-mode hr {
+   background-color: #fff;
+  }
+
+  body.selenite-mode .sidebar-btn {
+   background-color: #10002B;
+   color: #fff;
+  }
+
+  body.selenite-mode .sidebar-btn:hover,
+  body.selenite-mode .homebtn {
+   background-color: #240046;
+  }
+
+  body.selenite-mode .homebtn:hover {
+   background-color: #3C096C;
+   border: 3px solid rgb(90, 24, 154);
+  }
+
+  body.selenite-mode .sidebar-btn path {
+   fill: #ffffff;
+  }
+
+  body.selenite-mode .search,
+  body.selenite-mode .submit {
+   background-color: #3C096C;
+  }
+
+  body.selenite-mode .search::placeholder,
+  body.selenite-mode .int-desc {
+   color: #fff;
+  }
+
+  body.selenite-mode strong,
+  body.selenite-mode .subtitle {
+   color: #3C096C;
+  }
+
+  body.selenite-mode .proxy-button {
+   background-color: #3C096C;
+  }
+
+  body.selenite-mode .proxy-button:hover {
+   background-color: #240046;
+  }
+
+  body.selenite-mode #proxy-console,
+  body.selenite-mode #proxy-menu,
+  body.selenite-mode #proxy-options {
+   background-color: #240046;
+  }
+
+  body.selenite-mode #spacet,
+  body.selenite-mode #spacet-index {
+   margin: 0;
+  }
+
+  body.selenite-mode .title-img,
+  body.selenite-mode #search-space {
+   margin-top: 10%;
+  }
+
+  body.selenite-mode #space-above {
+   margin-top: 7%;
+  }
+
+  body.selenite-mode .cheat {
+   background-color: rgb(36, 0, 70);
+   box-shadow: rgb(36, 0, 70) 0px 0px 5px 5px;
+   color: #fff;
+  }
+
+  body.selenite-mode .cheat-title {
+   text-decoration: underline;
+  }
+
+  body.selenite-mode #all {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(14vw, 2fr));
+   grid-gap: 8px;
+   margin: 0 10% 0 10%;
+   justify-content: space-evenly;
+  }
+
+  body.selenite-mode .game {
+   width: 14vw;
+   border-radius: 20px;
+   display: flex;
+   position: relative;
+   overflow: hidden;
+   margin: 15px 0 15px 0;
+   justify-content: space-between;
+   height: auto;
+   z-index: 24;
+   flex-direction: column;
+   background-color: rgb(36, 0, 70);
+   cursor: pointer;
+   box-shadow: 0px 0px 5px 5px rgb(36, 0, 70);
+   border: none;
+  }
+
+  body.selenite-mode .game:hover {
+   transform: scale(1.1);
+   filter: brightness(85%);
+   box-shadow: 0px 0px 5px 5px rgb(36, 0, 70);
+  }
+
+  body.selenite-mode .g-icon {
+   width: 100%;
+   border-radius: 20px;
+   aspect-ratio: 1 / 1;
+  }
+
+  body.selenite-mode .g-icon {
+   width: 100%;
+   border-radius: 20px;
+   aspect-ratio: 1 / 1;
+  }
+
+  body.selenite-mode .title {
+   font-size: 14px;
+   font-weight: 700;
+   float: right;
+   font-family: 'Prompt', sans-serif;
+   justify-content: flex-end;
+   align-items: center;
+   display: flex;
+   height: auto;
+   width: 100%;
+   margin: 15px 0 0 0;   
+  }
+
+  body.selenite-mode .creator {
+   display: none;
+  }
+
+  body.selenite-mode .game-title {
+   font-size: 43px;
+   font-weight: 700;
+   text-align: center;
+  }
+
+  body.selenite-mode #gcontrols {
+   background-color: #240046;
+  }
+
+  body.selenite-mode #returnbtn,
+  body.selenite-mode #fullbtn,
+  body.selenite-mode #refbtn {
+   background-color: #3C096C;
+  }
+
+  body.selenite-mode #returnbtn:hover,
+  body.selenite-mode #fullbtn:hover,
+  body.selenite-mode #refbtn:hover {
+   background-color: #10002B;
+  }
+
+  body.selenite-mode #links {
+   background-color: #240046;
+  }
+
+  body.selenite-mode #chat-options {
+   background-color: #240046;
+  }
+
+  body.selenite-mode .chat-button {
+   background-color: #240046;
+  }
+
+  body.selenite-mode .chat-button:hover {
+   background-color: #3C096C;
+   border: 3px solid rgb(90, 24, 154);
+  }
+
+/* Ugly Mode */
+
+  body.ugly-mode #header,
+  body.ugly-mode #footer {
+   background-color: #99dbbe;
+   color: #0c863d;
+   display: flex;
+   width: 150%;
+   z-index: 1;
+  }
+
+  body.ugly-mode .int-desc {
+   font-size: 42px;
+  }
+
+  body.ugly-mode .header-img {
+   position: absolute;
+   margin: 20px;
+  }
+
+  body.ugly-mode {
+   background-color: #021b92;
+   background-size: cover;
+   color: #a82dbf;
+   font-family: 'Gasoek One', sans-serif;
+  }
+
+  body.ugly-mode #header {
+   justify-content: center;
+   position: absolute;
+   z-index: 999999999;
+   padding-top: 0;
+   padding-bottom: 0;
+   top: 0;
+   box-sizing: border-box;
+   height: 6%;
+   background-color: #1d16d3;
+   border-radius: 50%;
+   box-shadow: #299214 0px 2px 15px 0px;
+  }
+
+  body.ugly-mode #footer {
+   bottom: 0;
+   border-radius: 0;
+  }
+
+  body.ugly-mode .header-link,
+  body.ugly-mode .footer-a {
+   color: #99322e;
+   font-size: 2.3em;
+   font-weight: 900;
+   text-align: center;
+   margin-right: 2rem;
+   margin-left: 1rem;
+   transition: text-shadow 0.2s ease;
+  }
+
+  body.ugly-mode .header-link:hover,
+  body.ugly-mode .footer-a:hover {
+   text-shadow: 2px 2px 6px #900428;
+  }
+
+  body.ugly-mode #settings-box {
+   background-color: #c96099;
+   color: #a0dca0;
+  }
+
+  body.ugly-mode .homebtn {
+   padding: 0;
+   font-size: 1em;
+   border: none;
+  }
+
+  body.ugly-mode #ab-cloak,
+  body.ugly-mode .settings-input-box {
+   background-color: #2fdf2d;
+  }
+
+  body.ugly-mode .select-settings,
+  body.ugly-mode .settings-input,
+  body.ugly-mode .tab-cloak-btn {
+   background-color: #3C096C;
+   border: 2px solid #d8fc19;
+   padding: 0;
+   margin: 0;
+   text-decoration: underline;
+   font-size: 12px;
+  }
+
+  body.ugly-mode .sidebar-title {
+   color: #e99b09;
+   font-size: 0.9em;
+  }
+
+  body.ugly-mode hr {
+   height: 0.5%;
+   background-color: #69120d;
+  }
+
+  body.ugly-mode .sidebar-btn {
+   background-color: #be6241;
+   padding: 0;
+   margin: 0;
+   font-size: 20px;
+   color: #d402bb;
+  }
+
+  body.ugly-mode .sidebar-btn:hover,
+  body.ugly-mode .homebtn {
+   background-color: #e66d9f;
+  }
+
+  body.ugly-mode .homebtn:hover {
+   background-color: #3C096C;
+   border: 9px solid #b6bf94;
+  }
+
+  body.ugly-mode .sidebar-btn path {
+   fill: #4abe96;
+  }
+
+  body.ugly-mode .search,
+  body.ugly-mode .submit {
+   height: 10vh;
+   border: 5px solid #601582;
+   background-color: #c894dd;
+  }
+
+  body.ugly-mode .search::placeholder,
+  body.ugly-mode .int-desc {
+   color: #69921e;
+  }
+
+  body.ugly-mode strong,
+  body.ugly-mode .subtitle {
+   color: #159214;
+  }
+
+  body.ugly-mode .proxy-button {
+   width: 2vw;
+   background-color: #ba9c69;
+  }
+
+  body.ugly-mode .proxy-button:hover {
+   background-color: #b1121a;
+  }
+
+  body.ugly-mode #proxy-console,
+  body.ugly-mode #proxy-menu,
+  body.ugly-mode #proxy-options {
+   position: absolute;
+   flex-direction: row;
+   background-color: #4b4ce6;
+  }
+
+  body.ugly-mode #spacet,
+  body.ugly-mode #spacet-index {
+   margin: 0;
+  }
+
+  body.ugly-mode .title-img,
+  body.ugly-mode #search-space {
+   margin-top: 15%;
+  }
+
+  body.ugly-mode #space-above {
+   margin-top: 9%;
+  }
+
+  body.ugly-mode .cheat {
+   position: absolute;
+   padding: 0;
+   background-color: #40b329;
+   box-shadow: #9d21c8 0px 0px 2px 2px;
+   color: #8169a6;
+  }
+
+  body.ugly-mode #all {
+   display: inline-block;
+   margin: 0 15% 0 15%;
+   justify-content: center;
+  }
+
+  body.ugly-mode .game {
+   width: 125px;
+   border-radius: 5px;
+   display: flex;
+   position: relative;
+   overflow: hidden;
+   margin: 12px 0 12px 0;
+   justify-content: space-between;
+   height: 111px;
+   z-index: 24;
+   flex-direction: column;
+   background-color: #8fc240;
+   cursor: pointer;
+   box-shadow: 0px 0px 23px 2px #3a6260;
+   border: none;
+  }
+
+  body.ugly-mode .game:hover {
+   transform: scale(0.2);
+   box-shadow: 0px 0px 2px 15px #e81415;
+  }
+
+  body.ugly-mode .g-icon {
+   width: 150%;
+   border-radius: 20px;
+   aspect-ratio: 1 / 1;
+  }
+
+  body.ugly-mode .g-icon {
+   width: 150%;
+   border-radius: 20px;
+   aspect-ratio: 1 / 1;
+  }
+
+  body.ugly-mode .title {
+   font-size: 14px;
+   font-weight: 900;
+   float: right;
+   font-family: 'Gasoek One', sans-serif;
+   justify-content: flex-end;
+   align-items: center;
+   display: flex;
+   height: auto;
+   width: 150%;
+   margin: 12px 0 0 0;   
+  }
+
+  body.ugly-mode .creator {
+   font-size: 1.7em;
+  }
+
+  body.ugly-mode .game-title {
+   font-size: 49px;
+   font-weight: 900;
+   text-align: center;
+  }
+
+  body.ugly-mode .error-title,
+  body.ugly-mode .error-desc {
+   font-size: 1.3em;
+   text-align: right;
+   border: 4px solid #ff0000;
+  }
+
+  body.ugly-mode #gcontrols {
+   margin: 0;
+   padding: 0;
+   background-color: #348fec;
+  }
+
+  body.ugly-mode #returnbtn,
+  body.ugly-mode #fullbtn,
+  body.ugly-mode #refbtn {
+   border-radius: 5px;
+   padding: 0;
+   background-color: #12e1a0;
+  }
+
+  body.ugly-mode #returnbtn:hover,
+  body.ugly-mode #fullbtn:hover,
+  body.ugly-mode #refbtn:hover {
+   background-color: #1e69ff;
+  }
+
+  body.ugly-mode #links {
+   background-color: #8df164;
+  }
+
+  body.ugly-mode #chat-options {
+   margin: 0;
+   padding: 0;
+   background-color: #ca9ca4;
+  }
+
+  body.ugly-mode .chat-button {
+   background-color: #cb8602;
+   padding: 0;
+   font-size: 18px;
+   border: none;
+  }
+
+  body.ugly-mode .chat-button:hover {
+   background-color: #a24906;
+   border: 9px solid #0aed62;
+  }
+
+  body.ugly-mode .settings-input-label {
+   font-size: 1em;
+   margin: 0;
+  }
+
+  body.ugly-mode .settings-box-title {
+   font-size: 1.3em;
+   margin: 0;
+  }
+
+/* Space */
+
+  body.space-mode #header,
+  body.space-mode #footer {
+   background-color: #040402;
+   color: #fff;
+   display: flex;
+   width: 100%;
+   z-index: 1;
+  }
+
+  body.space-mode {
+   background-color: #000;
+   color: #fff;
+   font-family: "Space Mono", monospace;
+  }
+
+  body.space-mode #header {
+   justify-content: space-between;
+   z-index: 999999999;
+   padding: 5px 20px;
+   top: 0;
+   box-sizing: border-box;
+   height: 57px;
+   box-shadow: 0 0 7px #242422;
+  }
+
+  body.space-mode #footer {
+   box-shadow: 0 0 7px #242422;
+   bottom: 0;
+  }
+
+  body.space-mode .header-link,
+  body.space-mode .footer-a {
+   color: #fff;
+   text-align: center;
+  }
+
+  body.space-mode .header-link:hover,
+  body.space-mode .footer-a:hover {
+   color: #0095ff;
+  }
+
+  #space-particles,
+  #particles-js {
+   z-index: -1;
+   position: fixed;
+   width: 100%;
+   height: 100%;
+  }
+
+  body.space-mode #settings-box,
+  body.space-mode .sidebar-btn,
+  body.space-mode .game {
+   background-color: transparent;
+   color: #fff;
+  }
+
+  body.space-mode .sidebar-btn:hover,
+  body.space-mode .settings-input,
+  body.space-mode .select-settings,
+  body.space-mode .search,
+  body.space-mode .submit,
+  body.space-mode .proxy-button,
+  body.space-mode #chat-options,
+  body.space-mode .cheat {
+   background-color: #1f1f1f;
+  }
+
+  body.space-mode .settings-input-box,
+  body.space-mode #ab-cloak,
+  body.space-mode #links,
+  body.space-mode #proxy-console,
+  body.space-mode #proxy-menu,
+  body.space-mode #proxy-options {
+   background-color: #030303;
+  }
+
+  body.space-mode .proxy-button:hover {
+   background-color: #1a1a1a;
+  }
+
+  body.space-mode #spacem {
+   margin-top: 10%;
+  }
+
+  body.space-mode .cheat:hover {
+   transform: scale(1.05);
+   box-shadow: 0 0 10px rgb(0, 149, 255);
+  }
+
+/* Fonts */
+
+
+
+
+
+
+
+

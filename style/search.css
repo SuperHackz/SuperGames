@@ -1,0 +1,11 @@
+#search-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  gap: 13px;
+}
+
+#main-area {
+  margin-left: 2%;
+  margin-right: 2%;
+  min-height: 100vh;
+}

@@ -1,0 +1,76 @@
+#introduction,
+#toc,
+#users,
+#conduct,
+#privacy,
+#intellectual, 
+#user-bans,
+#contact, 
+#tos-changes {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.tos-title,
+.tos-paragraph,
+.tos-subtitle, 
+.tos-subtitle-paragraph,
+.tos-comp-title,
+.tos-small,
+.tos-link {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+.tos-title,
+.tos-comp-title {
+  color: #0095ff;
+}
+
+.tos-comp-title {
+  font-size: 2em;
+  border-bottom: 4px solid #0095ff;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.tos-title {
+  font-size: 2.8em;
+  font-weight: bold;
+  color: #0095ff;
+}
+
+.tos-paragraph {
+  font-size: 1.3em;
+}
+
+.tos-subtitle {
+  margin-bottom: 7px;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.tos-subtitle-paragraph {
+  margin: 0;
+  font-size: 1.3em;
+}
+
+.tos-link {
+  text-align: left;
+  cursor: pointer;
+  color: #0095ff;
+  display: inline;
+  text-decoration: underline;
+}
+
+.tos-small {
+  font-size: 1.2em;
+}

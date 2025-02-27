@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+.title-img {
+  width: 750px;
+  margin-top: 3%;
+}
+
+.subtitle {
+  color: #0095ff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 2.2em;
+  font-weight: bold;
+}
+
+.homebtn {
+  height: auto;
+  margin-top: 10px;
+  font-size: 2.6em;
+  padding: 10px;
+  max-height: 100vh;
+  font-weight: bold;
+  width: auto;
+  max-width: 100vw;
+  border: none;
+  border: 3px solid #fff;
+  border-radius: 25px;
+  color: #fff;
+  background-color: #0095ff;
+  cursor: pointer;
+  transition: border 0.1s ease, transform 0.1s ease, background-color 0.3s ease;
+  font-family: 'Lexend', sans-serif;
+}
+
+.homebtn:hover {
+  border: 3px solid #0b9aff;
+  background-color: #056cb6;
+}
+
+form {
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.search {
+  color: #ffffff;
+  font-size: 1.9em;
+  width: 50vw;
+  height: 85px;
+  border-radius: 0 35px 35px 0;
+  border: none;
+  background-color: #22272E;
+  font-size: 3.2em;
+  padding: 0 50px 0 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.search::placeholder {
+  color: #ADB0B7;
+}
+
+.search:focus {
+  outline: none;
+  border-color: transparent;
+}
+
+.submit {
+  width: 5vw;
+  height: 85px;
+  background-color: #22272E;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px 0 0 1px solid #fff;
+  justify-content: center;
+  border-radius: 35px 0 0 35px;
+}
+
+.fa {
+  width: 3vw;
+}
+
+#introductory {
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+}
+
+.int-title {
+  margin: 0;
+  color: #0095ff;
+  font-size: 2.4em;
+  text-align: center;
+}
+
+.int-desc {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  margin: 0;
+  color: #C3C7CD;
+  text-align: center;
+  font-size: 1.8em;
+}
+
+.int-desc a {
+  color: #0095ff;
+  text-decoration: none;
+}
