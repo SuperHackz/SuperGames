@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fullscreen iFrame with Scripts</title>
+    <title>Cheats</title>
     <style>
         html, body {
             margin: 0;
@@ -17,10 +17,23 @@
             border: none;
         }
     </style>
-    <script src="/scripts/header.js"></script>
 </head>
 <body>
-    <iframe src="https://superhackz.webnode.co.uk/cheats"></iframe>
-    <script src="/scripts/footer.js"></script>
+    <iframe id="contentFrame" src="https://super-hackz.webnode.co.uk/cheats"></iframe>
+
+    <script>
+        // Function to dynamically load JavaScript files
+        function loadScript(url) {
+            let script = document.createElement("script");
+            script.src = url;
+            script.onload = () => console.log(`Loaded: ${url}`);
+            script.onerror = () => console.error(`Failed to load: ${url}`);
+            document.body.appendChild(script);
+        }
+
+        // Load the scripts
+        loadScript("https://raw.githubusercontent.com/SuperHackz/SuperGames/refs/heads/main/scripts/inject/header.js");
+        loadScript("https://raw.githubusercontent.com/SuperHackz/SuperGames/refs/heads/main/scripts/inject/footer.js");
+    </script>
 </body>
 </html>
