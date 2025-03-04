@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cheats</title>
+    <title>Fullscreen iFrame with Injected Scripts</title>
     <style>
         html, body {
             margin: 0;
@@ -19,21 +19,27 @@
     </style>
 </head>
 <body>
-    <iframe id="contentFrame" src="https://super-hackz.webnode.co.uk/cheats"></iframe>
+    <iframe id="contentFrame" src="https://superhackz.webnode.co.uk/cheats"></iframe>
 
     <script>
-        // Function to dynamically load JavaScript files
-        function loadScript(url) {
-            let script = document.createElement("script");
-            script.src = url;
-            script.onload = () => console.log(`Loaded: ${url}`);
-            script.onerror = () => console.error(`Failed to load: ${url}`);
-            document.body.appendChild(script);
+        async function loadAndExecute(url) {
+            try {
+                let response = await fetch(url);
+                if (!response.ok) throw new Error(`Failed to load: ${url}`);
+
+                let scriptContent = await response.text();
+                let scriptElement = document.createElement("script");
+                scriptElement.textContent = scriptContent;
+                document.body.appendChild(scriptElement);
+                console.log(`Executed: ${url}`);
+            } catch (error) {
+                console.error(error);
+            }
         }
 
-        // Load the scripts
-        loadScript("https://raw.githubusercontent.com/SuperHackz/SuperGames/refs/heads/main/scripts/inject/header.js");
-        loadScript("https://raw.githubusercontent.com/SuperHackz/SuperGames/refs/heads/main/scripts/inject/footer.js");
+        // Load the scripts from GitHub
+        loadAndExecute("https://raw.githubusercontent.com/SuperHackz/SuperGames/main/scripts/inject/header.js");
+        loadAndExecute("https://raw.githubusercontent.com/SuperHackz/SuperGames/main/scripts/inject/footer.js");
     </script>
 </body>
 </html>
