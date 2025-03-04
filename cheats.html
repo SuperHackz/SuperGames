@@ -21,25 +21,8 @@
 <body>
     <iframe id="contentFrame" src="https://superhackz.webnode.co.uk/cheats"></iframe>
 
-    <script>
-        async function loadAndExecute(url) {
-            try {
-                let response = await fetch(url);
-                if (!response.ok) throw new Error(`Failed to load: ${url}`);
-
-                let scriptContent = await response.text();
-                let scriptElement = document.createElement("script");
-                scriptElement.textContent = scriptContent;
-                document.body.appendChild(scriptElement);
-                console.log(`Executed: ${url}`);
-            } catch (error) {
-                console.error(error);
-            }
-        }
-
-        // Load the scripts from GitHub
-        loadAndExecute("https://raw.githubusercontent.com/SuperHackz/SuperGames/main/scripts/inject/header.js");
-        loadAndExecute("https://raw.githubusercontent.com/SuperHackz/SuperGames/main/scripts/inject/footer.js");
-    </script>
+    <!-- Injected Scripts loaded at the bottom of the body -->
+    <script src="https://cdn.jsdelivr.net/gh/SuperHackz/SuperGames@main/scripts/inject/header.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/SuperHackz/SuperGames@main/scripts/inject/footer.js"></script>
 </body>
 </html>
