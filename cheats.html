@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fullscreen iFrame with Injected Scripts</title>
+    <title>Fullscreen iFrame with Google Translate Proxy</title>
     <style>
         html, body {
             margin: 0;
@@ -19,10 +19,25 @@
     </style>
 </head>
 <body>
-    <iframe id="contentFrame" src="https://superhackz.webnode.co.uk/cheats"></iframe>
+    <!-- Google Translate proxy for iframe -->
+    <iframe id="contentFrame" src="https://translate.google.com/translate?hl=en&sl=auto&tl=en&u=https://super-hackz.webnode.co.uk/cheats" onload="injectScripts()"></iframe>
 
-    <!-- Injected Scripts loaded at the bottom of the body -->
-    <script src="https://cdn.jsdelivr.net/gh/SuperHackz/SuperGames@main/scripts/inject/header.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/SuperHackz/SuperGames@main/scripts/inject/footer.js"></script>
+    <script>
+        function injectScripts() {
+            // Inject header.js at the top
+            const headerScript = document.createElement("script");
+            headerScript.src = "https://cdn.jsdelivr.net/gh/SuperHackz/SuperGames@main/scripts/inject/header.js";
+            headerScript.onload = () => console.log("Header script loaded.");
+            headerScript.onerror = () => console.error("Failed to load header script.");
+            document.head.appendChild(headerScript);
+
+            // Inject footer.js at the bottom
+            const footerScript = document.createElement("script");
+            footerScript.src = "https://cdn.jsdelivr.net/gh/SuperHackz/SuperGames@main/scripts/inject/footer.js";
+            footerScript.onload = () => console.log("Footer script loaded.");
+            footerScript.onerror = () => console.error("Failed to load footer script.");
+            document.body.appendChild(footerScript);
+        }
+    </script>
 </body>
 </html>
