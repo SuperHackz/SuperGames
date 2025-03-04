@@ -1,43 +1,24 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fullscreen iFrame with Google Translate Proxy</title>
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden;
-        }
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-    </style>
-</head>
-<body>
-    <!-- Google Translate proxy for iframe -->
-    <iframe id="contentFrame" src="https://translate.google.com/translate?hl=en&sl=auto&tl=en&u=https://super-hackz.webnode.co.uk/cheats" onload="injectScripts()"></iframe>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cheats | SuperGames </title>
+        <meta name="description" content="🕹 SuperGames is an unblocked game site featuring over 100 games, free from internet restrictions.">
+        <meta name="keywords" content="games, gaming, unblocked games">
+        <meta name="author" content="Dan's Tech">
+        <link rel="stylesheet" href="/style/home.css">
+        <link rel="stylesheet" href="/style/all.css">
+        <link rel="icon" href="/images/SuperGames/favicon-circle.png">
+    </head>
+    <body>
+        <script src="scripts/inject/header.js"></script>
 
-    <script>
-        function injectScripts() {
-            // Inject header.js at the top
-            const headerScript = document.createElement("script");
-            headerScript.src = "https://cdn.jsdelivr.net/gh/SuperHackz/SuperGames@main/scripts/inject/header.js";
-            headerScript.onload = () => console.log("Header script loaded.");
-            headerScript.onerror = () => console.error("Failed to load header script.");
-            document.head.appendChild(headerScript);
+        <!-- Main Content -->
+        <div id="main-area">
+            <p>Cheats have moved <a href="https://superhackz.webnode.co.uk/cheats/" target="_blank">here</a>.</p>
+        </div>
 
-            // Inject footer.js at the bottom
-            const footerScript = document.createElement("script");
-            footerScript.src = "https://cdn.jsdelivr.net/gh/SuperHackz/SuperGames@main/scripts/inject/footer.js";
-            footerScript.onload = () => console.log("Footer script loaded.");
-            footerScript.onerror = () => console.error("Failed to load footer script.");
-            document.body.appendChild(footerScript);
-        }
-    </script>
-</body>
+        <script src="scripts/inject/footer.js"></script>
+    </body>
 </html>
