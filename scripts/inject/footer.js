@@ -6,20 +6,10 @@ document.write(`
         </div>
         <div class="footer-2">
             <p class="footer-title">Developers</p>
-            <a class="footer-a" href="https://github.com/MyBooty165" target="_blank">MyBooty165 (X-88)</a>
-            <a class="footer-a" href="https://github.com/sc0ttferren" target="_blank">Scott Ferren</a>
+            <a class="footer-a" href="https://github.com/SuperHackz" target="_blank">SuperHackz (X-88)</a>
         </div>
-        <div class="footer-3">
-            <p class="footer-title">Community</p>
-            <a class="footer-a" href="https://twitter.com/cybriatech_" target="_blank">Twitter (X)</a>
-            <a class="footer-a" href="https://tiktok.com/@cybriatech" target="_blank">TikTok</a>
-            <a class="footer-a" href="https://discord.gg/c3AmKk67vt" target="_blank">Discord</a>
         </div>
         <div class="footer-4">
-            <p class="footer-title">Sources</p>
-            <a class="footer-a" href="https://github.com/CybriaTech/CybriaGames" target="_blank">GitHub Repo</a>
-            <a class="footer-a" href="https://github.com/CybriaTech/CybriaGames-Assets" target="_blank">Game Assets</a>
-            <a class="footer-a" href="https://cybriagames-old.pages.dev/" target="_blank">Old Website</a>
         </div>
     </footer>
 `);
