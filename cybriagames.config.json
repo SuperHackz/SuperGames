@@ -1,10 +1,10 @@
 [
   {
-    "Title": "CybriaGames",
-    "Creator": "CybriaTech",
-    "Version": "2",
+    "Title": "SuperGames",
+    "Creator": "SuperHackz",
+    "Version": "3",
     "Games": "/json/games.json",
-    "Created": "July 11, 2024"
+    "Created": "Feb 11, 2025"
   }
 ]
     
