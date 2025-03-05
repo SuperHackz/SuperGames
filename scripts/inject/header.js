@@ -1,6 +1,6 @@
 document.write(`
     <header id="header">
-        <img class="header-img" alt="SuperGames" src="/images/cybriagames/logo-name2half.png" onclick="window.location.href='/'">
+        <img class="header-img" alt="Super Games" src="/images/cybriagames/logo-name2half.png" onclick="window.location.href='/'">
         <nav class="header-links">
             <a class="header-link" href="/">Home</a>
             <a class="header-link" href="/games">Games</a>
