@@ -6,7 +6,7 @@ document.write(`
         </div>
         <div class="footer-2">
             <p class="footer-title">Developers</p>
-            <a class="footer-a" href="https://github.com/SuperHackz" target="_blank">SuperHackz (X-88)</a>
+            <a class="footer-a" href="https://github.com/SuperHackz" target="_blank">SuperHackz (Dan V.)</a>
         </div>
         </div>
         <div class="footer-4">
