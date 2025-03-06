@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="🕹CybriaGames is an unblocked game site hosting over 100+ unblocked games where the danger of internet restrictions dosent apply.">
+    <meta name="description" content="🕹SuperGames is an unblocked game site hosting over 100+ unblocked games where the danger of internet restrictions dosent apply.">
     <meta name="keywords" content="games, game, gaming, unblocked games, ubg, unblocked game, cybriagames unblocked, cybria games, cyberia games, cybriagame, cyberiagames">
     <link rel="stylesheet" href="/style/search.css">
     <link rel="stylesheet" href="/style/games.css">
@@ -63,7 +63,7 @@
                 const response = await fetch('/json/games.json');
                 const games = await response.json();
                 document.querySelector('.game-title').textContent = `Results for "${query}"`;
-                document.title = `Results for "${query}" | CybriaGames"`;
+                document.title = `Results for "${query}" | SuperGames"`;
 
                 const outputgmes = games.filter(game =>
                     game.title.toLowerCase().includes(query.toLowerCase())
