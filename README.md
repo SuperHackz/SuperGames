@@ -6,7 +6,8 @@
 
 <h1 align="center">SuperGames</h1>
 
-<p align="center">SuperGames is an unblocked game site hosting over 100+ unblocked games where the danger of internet restrictions dosent apply. Our purpose to making SuperGames is to ensure everyone can have even the slightest bit of fun in school, whether it's playing the countless amounts of unique games, using school related hacks or just chatting in the chatroom!</p>
+<p align="center"> <a href="https://super-games.pro" target="_blank" rel="noopener noreferrer">Super Games</a>
+is an unblocked game site hosting over 100+ unblocked games where the danger of internet restrictions dosent apply. Our purpose to making SuperGames is to ensure everyone can have even the slightest bit of fun in school, whether it's playing the countless amounts of unique games, using school related hacks or just chatting in the chatroom!</p>
 
 <h1 align="center">What makes it so unique?</h1>
 
