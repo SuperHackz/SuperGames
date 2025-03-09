@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: cygames
+    name: supergames
     env: node
     buildCommand: build
     startCommand:
