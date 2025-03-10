@@ -18,6 +18,12 @@
     "creator": "Rob Kay",
     "source": "/games/slope"
   },
+    {
+    "title": "Stealing The Diamond",
+    "logo": "/images/games/subway-surfers-1.png",
+    "creator": "Dan Vaisbrot",
+    "source": "/games/stealing-the-diamond"
+  },
   {
     "title": "Cluster Rush",
     "logo": "/images/games/cluster-rush.png",
