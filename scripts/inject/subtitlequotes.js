@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
         "Better than any school, even you Hasmo.",
         "thank you Games for saving my boredom - some random student ",
         "DAN HOW ARE YOU STILL ALIVE?! - blooket haters",
-        "Thank you for checking out our website!!",
+        "Tell everyone at school you love SuperGames",
         "wild fact: dan spent years on a google site, it's still up..",
         "We update almost DAILY! Expect at least a new game every new day.",
         "wild fact: Dan redid this website, it was worth it.",
