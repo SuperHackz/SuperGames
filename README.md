@@ -1,6 +1,6 @@
 <p align="center">
   <kbd>
-    <img width="750px" src="/images/cybriagames/images.png">
+    <img width="300px" src="/images/cybriagames/logo-clear.png">
   </kbd>
 </p>
 
